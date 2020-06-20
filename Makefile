@@ -43,4 +43,4 @@ cursor.o: src/cursor.c src/cursor.h
 
 .PHONY: clean
 clean:
-	rm -f $(ALL) *.o
+	$(RM) $(ALL) *.o

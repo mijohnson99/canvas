@@ -9,6 +9,6 @@
 	         _dy = _y1>y ? _y1-y : y-_y1, sy = _y1>y ? 1 : -1, \
 	         _err = _dx - _dy; \
 		 !(2*_err >= -_dy && x ==_x1) && !(2*_err <= _dx && y == _y1); \
-		 2*_err>=-_dy?_err-=_dy,x+=sx:0,2*_err<=_dx?_err+=_dx,y+=sy:(void)0)
+		 2*_err>=-_dy?_err-=_dy,x+=sx:0,2*_err<=_dx?_err+=_dx,y+=sy:0)
 
 #endif
