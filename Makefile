@@ -7,7 +7,7 @@ LDFLAGS = -lm -lSDL2
 
 BACKEND = sdl2
 
-ALL = grad draw life dot test
+ALL = grad draw life dot test voronoi
 
 # Executables
 
@@ -26,6 +26,9 @@ dot:	dot.o canvas.o
 	$(CC) $(LDFLAGS) $^ -o $@
 
 test:	test.o canvas.o
+	$(CC) $(LDFLAGS) $^ -o $@
+
+voronoi: voronoi.o canvas.o
 	$(CC) $(LDFLAGS) $^ -o $@
 
 # Object files
